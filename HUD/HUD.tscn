@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://qibxwixjolb5"]
+
+[ext_resource type="Script" path="res://HUD/HUD.gd" id="1_cvf85"]
+[ext_resource type="FontFile" uid="uid://coxwhv2i386b" path="res://fonts/retrofont.ttf" id="1_poch7"]
+
+[node name="Hud" type="CanvasLayer"]
+script = ExtResource("1_cvf85")
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_poch7")
+theme_override_font_sizes/font_size = 24
+text = "Score: 0"
+
+[node name="HighScoreLablel" type="Label" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -101.0
+offset_bottom = 23.0
+grow_horizontal = 0
+theme_override_fonts/font = ExtResource("1_poch7")
+theme_override_font_sizes/font_size = 24
+text = "High Score: 0"
+horizontal_alignment = 2
+
+[node name="Puchale play" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.956863, 0, 0.258824, 1)
+theme_override_fonts/font = ExtResource("1_poch7")
+theme_override_font_sizes/font_size = 50
+text = "Click to Run"
+
+[node name="Scoretimer" type="Timer" parent="."]
+
+[connection signal="pressed" from="Puchale play" to="." method="_on_puchale_play_pressed"]
+[connection signal="timeout" from="Scoretimer" to="." method="_on_scoretimer_timeout"]
