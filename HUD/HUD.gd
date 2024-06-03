@@ -5,7 +5,7 @@ var Highscore=0
 var is_playing=false
 
 func update_Score_label():
-	Score=Score + 100
+	Score=Score + 10
 	$ScoreLabel.text ="Score: %d"%(Score)
 
 

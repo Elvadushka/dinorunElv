@@ -17,4 +17,4 @@ func game_over():
 
 func _process(delta):
 	if ($PlayerElv.position.x-$Floor.position.x)> screen_size.x:
-		$Floor.position.x =$Floor.position.x + screen_size.x
+		$Floor.position.x =$PlayerElv.position.x - 150

@@ -20,5 +20,5 @@ func _physics_process(delta):
 			velocity.y +=(Gravity*delta)
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 			velocity.y= JUMP_VELOCITY
-		velocity.x=SPEED
+		velocity.x=SPEED + GHUD.Score
 		move_and_slide()
