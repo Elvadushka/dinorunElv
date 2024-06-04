@@ -178,7 +178,7 @@ animations = [{
 position = Vector2(-7, -1)
 script = ExtResource("1_l3xh7")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["player elv"]]
 position = Vector2(-3.50002, -6.5)
 scale = Vector2(6.54167, 6.54167)
 sprite_frames = SubResource("SpriteFrames_ta1f4")

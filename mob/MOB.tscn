@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://j40e0iij5q1t"]
+
+[ext_resource type="Script" path="res://mob/MOB.gd" id="1_va70r"]
+[ext_resource type="Texture2D" uid="uid://bq0ihr7b4rc4d" path="res://icon.svg" id="2_fkecu"]
+[ext_resource type="Texture2D" uid="uid://b0u8vctmdmnci" path="res://mob/Sprite.png" id="3_07r04"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_01oxu"]
+size = Vector2(75, 66)
+
+[node name="Mob" type="Area2D"]
+position = Vector2(1, 1)
+script = ExtResource("1_va70r")
+
+[node name="ScuareCol" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(1106.5, 610)
+shape = SubResource("RectangleShape2D_01oxu")
+
+[node name="Scuare" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1106.88, 610.75)
+scale = Vector2(0.701172, 0.542969)
+texture = ExtResource("2_fkecu")
+
+[node name="Sprite_enemyCol" type="CollisionPolygon2D" parent="."]
+visible = false
+position = Vector2(310, 220)
+scale = Vector2(0.824982, 0.652362)
+polygon = PackedVector2Array(975.89, 477.946, 988.033, 477.946, 995.173, 475.196, 993.961, 490.525, 989.949, 494.118, 1002.04, 528.042, 1001, 609, 1003, 620, 998.307, 642.969, 992, 647, 986.165, 648.863, 978.692, 641.987, 971.22, 647.881, 964.682, 647.881, 959, 627, 957, 614, 959.078, 597.784, 956.276, 529.024, 973.088, 497.591)
+
+[node name="Sprite_enemy" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1117.48, 587.493)
+scale = Vector2(0.0782015, 0.072692)
+texture = ExtResource("3_07r04")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(1136.34, 632.487)
+scale = Vector2(1.53358, 1.44866)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

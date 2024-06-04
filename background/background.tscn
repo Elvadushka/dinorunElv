@@ -10,8 +10,8 @@
 [node name="Background" type="ParallaxBackground"]
 
 [node name="MainBG" type="Sprite2D" parent="."]
-position = Vector2(1, -2)
-scale = Vector2(3.04, 3.08)
+position = Vector2(1, -1.19209e-07)
+scale = Vector2(2.9974, 3.00463)
 texture = ExtResource("1_cx81p")
 centered = false
 
@@ -20,7 +20,7 @@ motion_scale = Vector2(0.5, 0.5)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="FirstSprite" type="Sprite2D" parent="FirstLayer"]
-scale = Vector2(3.04, 3.12)
+scale = Vector2(2.99479, 3.00926)
 texture = ExtResource("2_ypmt4")
 centered = false
 
@@ -29,7 +29,7 @@ motion_scale = Vector2(0.7, 0.7)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="SecondSprite" type="Sprite2D" parent="SecondLayer"]
-scale = Vector2(3.04, 3.12)
+scale = Vector2(3.0026, 3.01389)
 texture = ExtResource("3_kd7wl")
 centered = false
 
@@ -38,7 +38,7 @@ motion_scale = Vector2(0.8, 0.8)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="ThirdSprite" type="Sprite2D" parent="ThirdLayer"]
-scale = Vector2(3.04, 3.12)
+scale = Vector2(2.98958, 3)
 texture = ExtResource("4_14pte")
 centered = false
 
@@ -47,7 +47,7 @@ motion_scale = Vector2(0.9, 0.9)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="FourSprite" type="Sprite2D" parent="FourLayer"]
-scale = Vector2(3.04, 3.12)
+scale = Vector2(2.9974, 3.00463)
 texture = ExtResource("5_ocole")
 centered = false
 
@@ -56,7 +56,7 @@ motion_scale = Vector2(0.1, 0.1)
 motion_mirroring = Vector2(1152, 0)
 
 [node name="FifthSprite" type="Sprite2D" parent="FifthLayer"]
-position = Vector2(0, 506)
-scale = Vector2(1.01594, 2.62099)
+position = Vector2(0, 566)
+scale = Vector2(1, 1.28125)
 texture = ExtResource("6_h3tpw")
 centered = false
